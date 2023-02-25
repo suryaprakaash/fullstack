@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Egg</title>
+        <style>
+            .animation{
+                position: absolute;
+                animation-name: aa;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                -webkit-box-reflect: below;
+            }
+            .egg1{
+                position: absolute;
+                background-color: red;
+                width: 100px;
+                height: 130px;
+                border-radius: 50% / 20px 20px 80px 80px;
+                box-shadow: 2px 4px 10px 8px  black;
+            }
+            .egg2{
+                position: absolute;
+                background-color: black;
+                left: 50px;
+                width: 10px;
+                height: 130px;
+                transform: rotate(30deg);
+                
+            }
+            .egg3{
+                position: absolute;
+                background-color: black;
+                right: 1px;
+                left: 41px;
+                width: 10px;
+                height: 130px;
+                transform: rotate(-40deg);
+            }
+            @keyframes aa {
+                0%{
+                    top: 0px; left: 0px;
+                }
+                25%{
+                    top: 500px; left: 100px;
+                }
+                50%{
+                    top: 250px; left:150px ;
+                }
+                100%{
+                    top: 500px; left: 200px;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animation">
+            <div class="egg1"></div>
+            <div class="egg2"></div>
+            <div class="egg3"></div>
+            <div class="egg4"></div>
+        </div>
+    </body>
+</html>

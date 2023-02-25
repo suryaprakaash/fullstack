@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <style>
+            .nav1{
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #333;
+                align-items: center;
+            }
+            .list{
+                color: white;
+                display: inline;
+                padding: 16px 100px;
+                border-right: 1px solid white;
+            }
+            .list:hover{
+                background-color: greenyellow;
+                color: #333;
+            }
+            .nav2{
+                display: flex;
+                list-style-type: none;
+                margin-top: 10;
+                padding: 0;
+                background-color: green;
+                align-items: center;
+                
+            }
+            img{
+                border-radius: 10%;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                width: 100px;
+                height: 50px;
+            }
+            .img1:hover{
+                border-radius: 50%;
+                
+            }
+            .list2{
+                display: inline;
+                margin-left: 150px;
+            }
+            .list2:hover{
+                width: 80px;
+                height: 80px;
+                top: 0;
+                background-color: white;
+                color: aquamarine;
+            }
+            .nav3{
+                display: flex;
+                margin-top: 25px;
+            }
+            .list3{
+                background-color: red;
+                color: black;
+                display: inline-block;
+                padding: 15px;
+                text-align: center;
+                width: 200px;
+            }
+            
+            .list3:hover{
+                background-color: #38e216;
+                color: #ec1d1d;
+            }
+            h1{
+                position: absolute;
+                margin-top: 15px;
+            }
+            h1:hover{
+                background-color: violet;
+                color: red;
+            }
+            .nav4{
+                margin-top: 20px;
+            }
+            .nav4 a{
+                background-color: #eee;
+                color: black;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+                width: 200px;
+            }
+            a:hover{
+                background-color: aquamarine;
+            }
+            .content{
+                display: none;
+                position: absolute;
+            }
+            .a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown:hover .content{
+                display: block;
+                background-color: #eee;
+
+            }
+            .dropdown{
+                margin: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="nav1">
+            <ul>
+                <li class="list">Home</li>
+                <li class="list">About</li>
+                <li class="list">Contact</li>
+                <li class="list">Service</li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <img src="images.jpg" alt="" class="img1">
+            <ul>
+                <li class="list2">Home</li>
+                <li class="list2">About</li>
+                <li class="list2">Contact</li>
+                <li class="list2">Services</li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <a class="list3">About</a>
+            <a class="list3">Home</a>
+            <a class="list3">Contact</a>
+            <a class="list3">Services</a> 
+        </div>
+        <div class="nav4">
+            <a>About</a>
+            <a>Home</a>
+            <a>Contact</a>
+            <a>Services</a>
+        </div>
+        <div class="dropdown">
+            <button class="drop">Menu</button>
+            <DIV class="content">
+                <a class="a">Home</a>
+                <a class="a">About</a>
+            </DIV>
+           
+        </div>
+    </body>
+</html>
